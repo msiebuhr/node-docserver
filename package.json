@@ -1,0 +1,18 @@
+{
+    "author": "Morten Siebuhr <msi@one.com>",
+    "name": "docserver",
+    "description": "Small server for hosting documentation",
+    "version": "0.0.0",
+    "repository": {
+        "url": "https://github.com/msiebuhr/node-docserver.git"
+    },
+    "dependencies": {
+        "express": "*",
+        "tar": "*"
+    },
+    "devDependencies": {},
+    "optionalDependencies": {},
+    "engines": {
+        "node": "*"
+    }
+}
