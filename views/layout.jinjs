@@ -17,6 +17,12 @@
 				</li>
 				{% endfor %}
 			</ul>
+			<ul class="nav pull-right">
+				<li>
+				<a href="/"><i class="icon-home icon-white"></i></a>
+				</li>
+			</ul>
+
 		</div>
 	</div>
 </div>
