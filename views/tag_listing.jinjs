@@ -4,11 +4,16 @@
 
 {% block body %}
 
-<ul>
+<h2>Tags</h2>
+{% if tags %}
+<ul class="lead">
 {% for tag in tags %}
 	<li><a href="/{{ project }}/{{ tag }}/">{{ tag }}</a></li>
 {% endfor %}
 </ul>
+{% else %}
+<p class="alert alert-error">No tags found for this project!</p>
+{% endif %}
 
 {% endblock %}
 

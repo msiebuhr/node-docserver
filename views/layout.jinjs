@@ -1,12 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <link href="http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap-combined.min.css" rel="stylesheet">
   <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-  <h1>{% block title %}{% endblock %}</h1>
 
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand">{% block title %}{% endblock %}</a>
+			<ul class="nav">
+				{% for l in navigation %}
+				<li>
+				<a href="{{ l.link }}">{{ l.name }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container">
   {% block body %}
   {% endblock %}
+  </div>
 </body>
 </html>
 

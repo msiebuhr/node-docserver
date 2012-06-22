@@ -4,11 +4,16 @@
 
 {% block body %}
 
-<ul>
+<h2>Projects</h2>
+{% if projects %}
+<ul class="lead">
 {% for project in projects %}
 	<li><a href="/{{ project }}">{{ project }}</a></li>
 {% endfor %}
 </ul>
+{% else %}
+<p class="alert alert-error">No documentation found for this project!</p>
+{% endif %}
 
 {% endblock %}
 
