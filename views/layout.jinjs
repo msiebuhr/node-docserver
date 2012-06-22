@@ -9,3 +9,7 @@
   {% endblock %}
 </body>
 </html>
+
+<!--
+	ex: filetype=html
+-->

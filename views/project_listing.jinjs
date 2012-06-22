@@ -11,3 +11,7 @@
 </ul>
 
 {% endblock %}
+
+<!--
+	ex: filetype=html
+-->
