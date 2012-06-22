@@ -15,6 +15,15 @@
 <p class="alert alert-error">No tags found for this project!</p>
 {% endif %}
 
+<h2>Upload new data</h2>
+
+<p>Upload new docs (or overwrite old ones) by PUT'ing a
+uncompressed tar-ball with the HTML/CSS/JS at the URL:</p>
+
+<pre>
+tar -c docs | curl -X PUT http://this.server.tld/SOME-PROJECT-NAME/MAJOR.MINOR.VERSION-OR-WHATEVER/ --data-binary @-
+</pre>
+
 {% endblock %}
 
 <!--
