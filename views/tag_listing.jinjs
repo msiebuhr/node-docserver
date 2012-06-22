@@ -1,0 +1,13 @@
+{% extends "layout.jinjs" %}
+
+{% block title %}{{ project }}{% endblock %}
+
+{% block body %}
+
+<ul>
+{% for tag in tags %}
+	<li><a href="/{{ project }}/{{ tag }}/">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}

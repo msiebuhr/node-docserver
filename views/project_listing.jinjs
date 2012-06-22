@@ -1,0 +1,13 @@
+{% extends "layout.jinjs" %}
+
+{% block title %}Documentation{% endblock %}
+
+{% block body %}
+
+<ul>
+{% for project in projects %}
+	<li><a href="/{{ project }}">{{ project }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}
