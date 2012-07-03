@@ -7,12 +7,12 @@
 <h2>Projects</h2>
 {% if projects %}
 <ul class="lead">
-{% for project in projects %}
-	<li><a href="/{{ project }}">{{ project }}</a></li>
+{% for project in projects|sort %}
+	<li><a href="/{{ project }}">{{ project|title }}</a></li>
 {% endfor %}
 </ul>
 {% else %}
-<p class="alert alert-error">No documentation found for this project!</p>
+<p class="alert alert-error">No documentation found!</p>
 {% endif %}
 
 <h2>Upload new data</h2>

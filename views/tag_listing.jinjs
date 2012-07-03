@@ -1,13 +1,13 @@
 {% extends "layout.jinjs" %}
 
-{% block title %}{{ project }}{% endblock %}
+{% block title %}{{ project|title }}{% endblock %}
 
 {% block body %}
 
 <h2>Tags</h2>
 {% if tags %}
 <ul class="lead">
-{% for tag in tags %}
+{% for tag in tags|sort %}
 	<li><a href="/{{ project }}/{{ tag }}/">{{ tag }}</a></li>
 {% endfor %}
 </ul>
