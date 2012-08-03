@@ -1,0 +1,33 @@
+{% extends "layout.jinjs" %}
+
+{% block title %}{{ dir }}{% endblock %}
+
+{% block body %}
+
+<h2>{{ folder }}</h2>
+{% if files %}
+<table class="table table-bordered table-striped">
+	<!--<thead> <th>Filename</th> </thead>-->
+	<tbody>
+	{% for file in files|sort %}
+	<tr>
+		<td><tt><a href="/{{ dir }}/{{ file }}">{{ file }}</a></tt></td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
+{% else %}
+<p class="alert">Empty directory...</p>
+{% endif %}
+
+{% if readme %}
+<div class="well readme">
+{{ readme }}
+</div>
+{% endif %}
+
+{% endblock %}
+
+<!--
+	ex: filetype=html
+-->
