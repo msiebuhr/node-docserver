@@ -13,7 +13,9 @@
         "remove": "*",
         "tar": "*"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "jshint": "*"
+    },
     "optionalDependencies": {},
     "engines": {
         "node": "*"
