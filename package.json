@@ -7,7 +7,7 @@
         "url": "https://github.com/msiebuhr/node-docserver.git"
     },
     "dependencies": {
-        "express": "*",
+        "express": "2.5.9",
         "github-flavored-markdown": "*",
         "jinjs": "*",
         "optimist": "*",
